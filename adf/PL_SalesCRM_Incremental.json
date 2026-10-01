@@ -1,4 +1,0 @@
-{
-  "name": "PL_SalesCRM_Incremental",
-  "note": "Export/copy the actual Azure Data Factory pipeline JSON here. The pipeline design is documented in README.md."
-}
