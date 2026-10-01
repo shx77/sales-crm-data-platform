@@ -26,7 +26,7 @@ Databricks
 - SQL watermark table for incremental loading
 - ADLS Gen2 raw storage
 - Databricks Bronze / Silver / Gold processing
-- Gold sales metrics
+
 
 ## ADF pipeline
 
@@ -63,18 +63,10 @@ Target metrics:
 - total deals
 - open deals
 - open pipeline value
-- % open deals
 - won deals / value
 - lost deals / value
 - touch count
 
-Open pipeline value:
-
-`SUM(deal_value)` where stage is not `won` or `lost`.
-
-% open deals:
-
-`open_deals / total_deals * 100`
 
 Deals and touches are aggregated separately before joining to avoid join fan-out.
 
